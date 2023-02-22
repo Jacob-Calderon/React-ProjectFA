@@ -1,0 +1,24 @@
+- client
+  - api
+  - assets
+    - images
+    - icons
+  - components
+    - atoms
+    - molecules
+    - organisms
+    - pages
+    - environment
+  - hooks
+  - store
+    - actions
+    - reducers
+    - thunks
+    - tests
+  - styles
+  - utils
+- server
+  - config
+  - database
+  - routes
+- scripts
