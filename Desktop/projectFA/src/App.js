@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Box width={500} bgcolor="blue"/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,6 +19,20 @@ function App() {
         >
           Learn React
         </a>
+            <Geolocated>
+                {({coords})}=(
+                  <Weather
+  latitude={coords.latitude}
+  longitude={coords.longitude}
+  unit="fahrenheit"
+>
+  {({ temperature, condition }) => (
+    <Box>
+      <p>The temperature is {temperature}°F and the condition is {condition}.</p>
+    </Box>
+  )}
+</Weather>
+            </Geolocated>
       </header>
     </div>
   );
